@@ -18,7 +18,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="icon" href="images/Micromatech.png">
+        <link rel="icon" href="images/technoflash.jpg">
         <title>Order Success</title>
 
         <style>
@@ -135,7 +135,7 @@
                     <div class="card">
                         <div class="card-content hoverable">
                             <h1>Success <i class="material-icons prefix medium green-text">done</i></h1>
-                            <h3>Thank you for purchasing products in Micromatech</h3>
+                            <h3>Thank you for purchasing products in Technoflash</h3>
                             <small>Redirecting to my orders....</small>
                         </div>
                     </div>

@@ -18,8 +18,8 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="icon" href="images/Micromatech.png">
-        <title>Micromatech</title>
+        <link rel="icon" href="images/technoflash.jpg">
+        <title>Technoflash</title>
         <style>
             #preLoad{
                 background-color: rgba(255,255,255,0.65);
@@ -77,7 +77,7 @@
             <!--Navigation-->
             <nav id="navigation" class="nav-extended blue">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/Micromatechv2.png" alt=""  style="width: 220px; height: auto; padding: 5px"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto; padding: 5px"></a>
                     <a href="" data-target="mobile-demo" class="sidenav-trigger" id="sideNavTrigger"><i class="material-icons right">menu</i></a>
                     <!-- User Panel or Login Modal -->
                     <ul class="right hide-on-med-and-down">
@@ -106,7 +106,7 @@
                     <ul class="sidenav" id="mobile-demo">
                         <div class="container">
                             <div class="card-image" style="padding-bottom: 1%">
-                                <img src="images/Micromatechv2.png" alt="" class="responsive-img" width="300px" style="display: block; height: auto; width: 100%">
+                                <img src="images/technoflash.jpg" alt="" class="responsive-img" width="300px" style="display: block; height: auto; width: 100%">
                             </div>
                             <!-- Modal Trigger -->
                             <?php
@@ -145,7 +145,7 @@
             <div id="loginModal" class="modal">
                 <div class="modal-content">
                     <h4>
-                        <img src="images/Micromatechv2.png" alt="" style="width: 220px; height: auto">
+                        <img src="images/technoflash.jpg" alt="" style="width: 220px; height: auto">
                         <a class="btn btn-floating modal-action modal-close waves-effect waves-green red right"><i class="material-icons">close</i></a>
                     </h4>
                     <small>Enter your email & password to login</small>

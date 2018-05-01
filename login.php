@@ -18,7 +18,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="icon" href="images/Micromatech.png">
+        <link rel="icon" href="images/technoflash.jpg">
         <title>Login</title>
         <style>
             #preLoad{
@@ -79,7 +79,7 @@
             <!--Navigation-->
             <nav id="navigation" class="nav-extended yellow ">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/Micromatechv2.png" alt=""  style="width: 220px; height: auto"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto"></a>
                 </div>
             </nav>
             <!--Login Error Handler-->

@@ -18,7 +18,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="icon" href="images/Micromatech.png">
+        <link rel="icon" href="images/technoflash.jpg">
         <title>Order Review</title>
         <style>
             img{
@@ -81,7 +81,7 @@
             <!--Navigation-->
             <nav id="navigation" class="nav-extended red">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/Micromatechv2.png" alt=""  style="width: 220px; height: auto"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto"></a>
                     <a href="" data-target="mobile-demo" class="sidenav-trigger" id="sideNavTrigger"><i class="material-icons right">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <!--User Login Status-->
@@ -104,7 +104,7 @@
                     <ul class="sidenav" id="mobile-demo">
                         <div class="container">
                             <div class="card-image" style="padding-bottom: 1%">
-                                <img src="images/Micromatechv2.png" alt="" class="responsive-img" width="300px" style="display: block; height: auto; width: 100%">
+                                <img src="images/technoflash.jpg" alt="" class="responsive-img" width="300px" style="display: block; height: auto; width: 100%">
                             </div>
                             <!-- Modal Trigger -->
                             <?php
