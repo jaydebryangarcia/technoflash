@@ -79,7 +79,7 @@
             <!--Navigation-->
             <nav id="navigation" class="nav-extended yellow ">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 60px; height: auto"></a>
                 </div>
             </nav>
             <!--Login Error Handler-->
@@ -96,11 +96,7 @@
             <div class="row">
                 <div class="col s12 m5 l7">
                     <div class="sidenav-fixed">
-                        <ul>
-                            <li><p class="flow-text">Side Nav</p></li>
-                            <li><p class="flow-text">Side Nav</p></li>
-                            <li><p class="flow-text">Side Nav</p></li>
-                        </ul>
+                        <img src="images/technoflash.jpg" alt="" class="circle responsive-img center" style="width: 460px; height: auto">
                     </div>
                 </div>
                 <div class="row">

@@ -78,7 +78,7 @@ date_default_timezone_set('Asia/Manila');
             <!--Navigation-->
             <nav id="navigation" class="nav-extended blue-grey darken-1 ">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 60px; height: auto"></a>
                     <ul class="right">
                         <li><a href="index.php">Shop <i class="material-icons prefix right">arrow_forward</i></a></li>
                     </ul>

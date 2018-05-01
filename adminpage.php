@@ -80,7 +80,7 @@ session_start();
             <!--Navigation-->
             <nav id="navigation" class="nav-extended indigo">
                 <div class="nav-wrapper container black-text">
-                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto; padding: 5px"></a>
+                    <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 60px; height: auto; padding: 5px"></a>
                     <a href="" data-target="mobile-demo" class="sidenav-trigger" id="sideNavTrigger"><i class="material-icons right">menu</i></a>
                     <!-- User Panel or Login Modal -->
                     <ul class="right hide-on-med-and-down">
