@@ -19,7 +19,7 @@
 </html>
 <?php
 function database(){
-    $host = 'mysql:host=localhost;dbname=micromatech';
+    $host = 'mysql:host=localhost;dbname=technoflash';
     $dbUsername = 'root';
     $dbPassword = '';
     try{

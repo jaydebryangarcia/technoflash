@@ -35,34 +35,7 @@ date_default_timezone_set('Asia/Manila');
     <body>
         <div id="preLoad">
             <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-yellow">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-green">
+                <div class="spinner-layer spinner-blue-only">
                     <div class="circle-clipper left">
                         <div class="circle"></div>
                     </div><div class="gap-patch">
@@ -148,7 +121,7 @@ date_default_timezone_set('Asia/Manila');
         <!--PHP Logic-->
         <?php
             function database(){
-                $host = 'mysql:host=localhost;dbname=micromatech';
+                $host = 'mysql:host=localhost;dbname=technoflash';
                 $dbUsername = 'root';
                 $dbPassword = '';
                 try{

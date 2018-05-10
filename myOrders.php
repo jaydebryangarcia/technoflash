@@ -19,7 +19,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="icon" href="images/technoflash.jpg">
-        <title>Order Success</title>
+        <title>My Orders</title>
 
         <style>
             img{
@@ -40,34 +40,7 @@
     <body>
         <div id="preLoad">
             <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-yellow">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div><div class="gap-patch">
-                        <div class="circle"></div>
-                    </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="spinner-layer spinner-green">
+                <div class="spinner-layer spinner-blue-only">
                     <div class="circle-clipper left">
                         <div class="circle"></div>
                     </div><div class="gap-patch">
@@ -81,7 +54,7 @@
         <!--Navigation-->
         <nav id="navigation" class="nav-extended blue">
             <div class="nav-wrapper container black-text">
-                <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 220px; height: auto"></a>
+                <a href="index.php" class="brand-logo"><img class="responsive-img" src="images/technoflash.jpg" alt=""  style="width: 60px; height: auto"></a>
                 <a href="" data-target="mobile-demo" class="sidenav-trigger" id="sideNavTrigger"><i class="material-icons right">menu</i></a>
                 <!-- User Panel or Login Modal -->
                 <ul class="right hide-on-med-and-down">
@@ -139,7 +112,7 @@
 
         <?php
             function database(){
-                $host = 'mysql:host=localhost;dbname=micromatech';
+                $host = 'mysql:host=localhost;dbname=technoflash';
                 $dbUsername = 'root';
                 $dbPassword = '';
                 try{
