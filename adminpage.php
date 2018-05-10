@@ -1,7 +1,7 @@
 <?php
-ob_start();
-date_default_timezone_set('Asia/Manila');
-session_start();
+    ob_start();
+    date_default_timezone_set('Asia/Manila');
+    session_start();
 ?>
 <!doctype html>
 <html lang="en">
@@ -91,17 +91,21 @@ session_start();
 
             <!--Content-->
             <div class="row">
-                <!--Add Category Button-->
+                <!--Buttons-->
                 <?php
+                    //delete button
                     if (isset($_GET['delete'])){
                         $delID = $_GET['delId'];
                         deleteItem($delID);
                     }
+                    //add category button
                     if (isset($_POST['addCatBtn'])){
                         $CatValue = ucfirst($_POST['catName']);
                         addCategory($CatValue);
                     }
+                    //add item button
                     if (isset($_POST['addItemBtn'])){
+                        //check image before uploading item
                         if (getimagesize($_FILES['itemImage']['tmp_name'])==FALSE){
                             echo '
                                 <div class="container">
@@ -125,7 +129,7 @@ session_start();
                             $name = addslashes($_FILES['itemImage']['name']);
                             $image = file_get_contents($image);
                             $image = base64_encode($image);
-                            //function
+                            //add item to database function call
                             addItem($item_name, $price, $description, $category, $image, $name, $created_at);
                         }
 
@@ -165,6 +169,7 @@ session_start();
                                         <div class="input-field col s12">
                                             <select name="itemCat" required>
                                                 <option value="" disabled selected>Choose your option</option>
+                                                <!--show category funtion call-->
                                                 <?php getCat();?>
                                             </select>
                                             <label>Item Category</label>
@@ -213,17 +218,17 @@ session_start();
                         <div id="removeItem" style="display: none">
                             <div class="card-title">Remove Item</div><hr>
                             <div class="card-content">
-                                <?php
-                                    showDeleteItem();
-                                ?>
+                                <!--show items to delete function call-->
+                                <?php showDeleteItem(); ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--PHP Logic-->
+        <!--PHP Functions-->
         <?php
+            //database function
             function database(){
                 $host = 'mysql:host=localhost;dbname=technoflash';
                 $dbUsername = 'root';
@@ -237,6 +242,7 @@ session_start();
                     echo 'Connection Error at: '. $e->getMessage();
                 }
             }
+            //user session function
             function userSession($sessionEmail, $sessionPassword){
                 $conn = database();
                 $selectUser = $conn->prepare('SELECT * FROM admin WHERE user_email = :user_email AND user_password = :user_password');
@@ -249,6 +255,7 @@ session_start();
                     echo '<li><a class="dropdown-trigger" data-target="userAccountOption">'.$userName.'</a></li>';
                 }
             }
+            //add item function
             function addItem($itemName, $itemPrice, $itemDescription, $itemCat, $itemImage, $imageName, $created){
                 $conn =  database();
                 $checkItem = $conn->prepare('SELECT * FROM item WHERE item_name = :item_name');
@@ -287,6 +294,7 @@ session_start();
                     ';
                 }
             }
+            //add category function
             function addCategory($value){
                 $conn =  database();
                 $selectCat = $conn->prepare('SELECT * FROM category WHERE product_category = :catname');
@@ -316,11 +324,8 @@ session_start();
                         </div>
                     ';
                 }
-
             }
-            function editItem(){
-                $conn =  database();
-            }
+            //show item for delete function
             function showDeleteItem(){
                 $conn =  database();
                 $selectItem = $conn->prepare('SELECT * FROM item');
@@ -348,6 +353,7 @@ session_start();
                     ';
                 }
             }
+            //get category function
             function getCat(){
                 $conn = database();
                 $getCategory = $conn->prepare('SELECT * FROM category');
@@ -357,6 +363,7 @@ session_start();
                     echo '<option value="'.$cat.'">'.$cat.'</option>';
                 }
             }
+            //delete item function
             function deleteItem($value){
                 $conn = database();
                 $deleteItem = $conn->prepare('DELETE FROM item WHERE item_id = :item_id');

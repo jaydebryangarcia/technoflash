@@ -102,6 +102,7 @@
                                     <a href="register.php" class="orange-text">Register Here</a>
                                 </div>
                             </form>
+                            <!--Submit Login-->
                             <?php
                                 if (isset($_POST['loginButton'])){
                                     $user_email = $_POST['user_email'];
