@@ -34,6 +34,10 @@ session_start();
                 position: absolute;
                 z-index: 4;
             }
+            body{
+                background-image: url("images/b1.jpg");
+                background-repeat: repeat;
+            }
         </style>
     </head>
     <body>

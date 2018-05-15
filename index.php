@@ -30,6 +30,10 @@
                 position: absolute;
                 z-index: 4;
             }
+            body{
+                background-image: url("images/b1.jpg");
+                background-repeat: repeat;
+            }
         </style>
     </head>
     <body>
@@ -167,7 +171,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row col s12 m9 l10">
+                <div class="col s12 m9 l10">
+                    <div class="carousel carousel-slider">
+                        <?php itemCarousel(); ?>
+                    </div>
+                    <hr>
+
                     <!--Category Choice PHP-->
                     <?php
                         if (isset($_GET['category'])){
@@ -364,6 +373,29 @@
                     echo '<li><a href="index.php?category='.$category.'" class="collection-item">'.$category.'</a></li>';
                 }
             }
+            function itemCarousel(){
+                $conn = database();
+                $itemQuery = $conn->prepare('SELECT * FROM item ORDER BY created_at DESC');
+                $itemQuery->execute();
+                $itemResult = $itemQuery->rowCount();
+                if ($itemResult > 0){
+                    while ($fetch = $itemQuery->fetch(PDO::FETCH_ASSOC)){
+                        $id = $fetch['item_id'];
+                        $name = $fetch['item_name'];
+                        $price = $fetch['item_price'];
+                        $description = $fetch['item_description'];
+                        $img = $fetch['item_image'];
+                        $category = $fetch['item_category'];
+                        $created_at = $fetch['created_at'];
+                        echo '
+                            <div class="carousel-item white green-text center" href="#one!">
+                                <a href="index.php"><img src="data:image;base64,'.$img.'" style="width: 40%; height: auto"></a>
+                                <p>'.$name.'</p>
+                            </div>
+                        ';
+                    }
+                }
+            }
         ?>
         <!--JavaScript at end of body for optimized loading-->
         <script src="js/googelcdn.jquery.min.js"></script>
@@ -402,6 +434,12 @@
                    });
                 });
 
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: false
+                });
+                setInterval(function () {
+                    $('.carousel').carousel('next');
+                }, 3000);
             });
             $(window).on('load', function () {
                 $('#preLoad').fadeOut(1000);

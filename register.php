@@ -29,6 +29,10 @@ date_default_timezone_set('Asia/Manila');
                 position: absolute;
                 z-index: 4;
             }
+            body{
+                background-image: url("images/b1.jpg");
+                background-repeat: repeat;
+            }
         </style>
     </head>
 

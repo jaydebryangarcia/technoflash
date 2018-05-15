@@ -33,6 +33,10 @@
             li.link{
                 cursor: pointer;
             }
+            body{
+                background-image: url("images/b1.jpg");
+                background-repeat: repeat;
+            }
         </style>
     </head>
     <body>
